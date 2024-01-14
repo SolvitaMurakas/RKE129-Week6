@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Covered By Your Grace', cursive;
+    line-height: 2;
+}
+
+.header{
+    height: 95vh;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, 0.370), rgba(128, 128, 128, 0.370)), url('../img/choco.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.text-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -35%);
+    width: 100%;
+    overflow: hidden;
+}
+
+.text-box h1{
+    text-transform: uppercase;
+    color: #1c1e1b;
+    text-shadow: 0 0 3px #1c1e1b, 0 0 5px #de272b;
+}
+
+.heading-main{
+    display: block;
+    font-size: 5rem;
+    letter-spacing: 1.1rem;
+    animation-name: Left;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Left{
+    0%{
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.heading-sub{
+    display: block;
+    font-size: 2.5rem;
+    letter-spacing: 1.3rem;
+    animation-name: Right;
+    animation-duration: 4s;
+    animation-timing-function: ease-in-out;
+}
+@keyframes Right{
+    0%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    80%{
+        transform: translateX(-50px);
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.btn-container{
+    text-align: center;
+}
+
+.btn{
+    border-bottom: 0.1rem solid #1c1e1b;
+    color: #1c1e1b;
+    display: inline-block;
+    font-size: 3rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn:hover{
+    background-color: rgba(148,162,154, 0.7);
+    box-shadow: 0 0.5rem 2rem #1c1e1b98;
+    transform: translateY(-5px);
+}
+.btn:active{
+    box-shadow: 0 0.5rem 1rem #111210c3;
+    transform: translateY(5px);
+}
+
+.main{
+    background-color: rgb(123,108,104);
+    height: 95vh;
+    margin-top: -5rem;
+    text-align: center;
+    padding-top: 5rem;
+    clip-path: polygon(50% 10%, 100% 0, 100% 50%, 100% 100%, 100% 100%, 50% 90%, 0 100%, 0 50%, 0 0);
+}
+
+.main h1{
+    color: #1c1e1b;
+    font-size: 3rem;
+    text-shadow: 0 0 3px #1c1e1b, 0 0 5px #94a29a;
+    text-transform: uppercase;
+}
+
+.gallery{
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 75%;
+}
+
+.gallery_photo{
+    box-shadow: 0 1.5rem 4rem #1c1e1b;
+    outline-offset: 1rem;
+    position: absolute;
+    width: 300px;
+    transition: all 0.3s;
+    z-index: 10;
+}
+
+.gallery_photo:hover{
+    outline: 1.8rem solid rgba(123, 108, 104, 0.678);
+    transform: scale(1.1);
+    z-index: 30;
+}
+
+.gallery_photo-cake{
+    left: 20%;
+    top: 5%;
+}
+.gallery_photo-drink{
+    top:35%;
+    left: 55%
+}
+
+.gallery_photo-cupcake{
+    left: 38%;
+    top: 20%;
+}
+
+.footer{
+    color: #1c1e1b;
+    padding: 1rem;
+    height: 25hv;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.footer ul li {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.footer ul li a{
+    color: #1c1e1b;
+    text-decoration: none;
+}
+
+.footer ul li:hover, .footer ul li a:hover{
+    color: #de272b;
+    transform: scale(1.2);
+}
